@@ -1,0 +1,405 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+body {
+	line-height: 24px;
+	font-size: 13px;
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+a:hover {
+	color: #2baa82;
+	text-decoration: none;
+}
+.fr {
+	float: right;
+}
+.fc-red {
+	color: #2baa82;
+}
+.fc-green {
+	color: #2baa82;
+}
+.fc-orange {
+	color: #dc8835;
+}
+.btn{
+	border-radius:2px;}
+table{
+	font-size:13px;}
+/*头部***************************************************************/
+.nsqa-navbar-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	margin-top: 20px;
+}
+.nsqa-navbar-wrapper-mini {
+	position: inherit;
+	margin-top: 0;
+	height:80px;
+	background:#333;
+	padding-top:10px;
+}
+/*logo**********/
+.nsqa-navbar-wrapper .navbar-brand {
+	display: block;
+	width: 178px;
+	height: 120px;
+	overflow: hidden;
+	background: url(../images/i-sprites.png) no-repeat 0 0;
+	line-height: 999;
+}
+.nsqa-navbar-wrapper-mini .navbar-brand {
+	display: block;
+	width: 90px;
+	height: 60px;
+	overflow: hidden;
+	background: url(../images/i-sprites.png) no-repeat -180px 0;
+	line-height: 999;
+}
+/*导航菜单**********/
+.nsqa-navbar-wrapper .nav > li > a {
+	padding: 8px 15px;
+	color: #fff;
+	font-size: 15px;
+	text-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+.nsqa-navbar-wrapper .nav > li > a:hover, .nsqa-navbar-wrapper .nav > li > a:focus {
+	background: #2baa82;
+}
+.nsqa-navbar-wrapper .nav .open > a, .nsqa-navbar-wrapper .nav .open > a:hover, .nsqa-navbar-wrapper .nav .open > a:focus {
+	background: #2baa82;
+}
+.nsqa-navbar-wrapper .navbar-right .dropdown-menu {
+	left: 0;
+	right: auto;
+	border-radius: 2px;
+}
+.nsqa-navbar-wrapper .nav-pills > li + li {
+	margin-left: 5px;
+}
+.nsqa-navbar-wrapper .nav-pills > li > a {
+	border-radius: 2px;
+}
+.nsqa-navbar-wrapper .nav-pills > li.active > a, .nsqa-navbar-wrapper .nav-pills > li.active > a:hover, .nsqa-navbar-wrapper .nav-pills > li.active > a:focus {
+	color: #fff;
+	background-color: #2baa82;
+}
+/*登录信息**********/
+.nsqa-navbar-wrapper .account {
+	float: right;
+	color: #eee;
+	margin-left: 20px;
+}
+.nsqa-navbar-wrapper .account span {
+	display: inline-block;
+	padding: 8px 0;
+}
+.nsqa-navbar-wrapper .account a {
+	margin-left: 20px;
+	display: inline-block;
+	padding: 7px 20px;
+	color: #eee;
+	border-radius: 2px;
+	text-decoration: none;
+	border: 1px #fff solid;
+}
+.nsqa-navbar-wrapper .account a:hover {
+	background: #2baa82;
+	border: 1px #2baa82 solid;
+	color: #fff;
+}
+/*轮播***************************************************************/
+.slider {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+.slides {
+	height: 100%;
+	overflow: hidden;
+ *zoom: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+}
+.slide {
+	height: 100%;
+	float: left;
+	clear: none;
+}
+.box {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+.box .container {
+	position: relative;
+	height: 100%;
+}
+.slider-item {
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	left: 10px;
+	top: 50%;
+	margin-top: -40px;
+	text-align: left;
+}
+.slider-item-title {
+	font-size: 40px;
+	color: #fff;
+	line-height: 64px;
+}
+.slider-item-cont {
+	font-size: 16px;
+	color: #fff;
+	line-height: 32px;
+}
+.slider-item-btn {
+	display: inline-block;
+	margin: 25px 0 0;
+	padding: 15px 60px;
+	clear: both;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 2px;
+	background: #2baa82;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.slider-item-btn:hover {
+	background: #5db694;
+	text-decoration: none;
+	color: #fff;
+}
+.slider-item-btn:active {
+	background: #5db694;
+	webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	color: #fff;
+}
+/*左右箭头*********/
+.slider-arrow {
+	position: absolute;
+	display: block;
+	margin-bottom: -40px;
+	width: 40px;
+	height: 80px;
+	line-height: 999;
+	overflow: hidden;
+	opacity: .6;
+}
+.slider-arrow-right {
+	bottom: 50%;
+	right: 40px;
+	background: url(../images/slider-arrow.png) no-repeat -40px 0;
+}
+.slider-arrow-left {
+	bottom: 50%;
+	left: 40px;
+	background: url(../images/slider-arrow.png) no-repeat 0 0;
+}
+.slider-arrow:hover {
+	opacity: 1;
+}
+/*圆点展示*********/
+.slider-nav {
+	position: absolute;
+	bottom: 30px;
+}
+.slider-nav-item {
+	width: 12px;
+	height: 12px;
+	float: left;
+	clear: none;
+	display: block;
+	margin: 0 5px;
+	background: #fff;
+	border-radius: 6px;
+	opacity: .4;
+	-webkit-transition: background .5s, opacity .5s;
+	-moz-transition: background .5s, opacity .5s;
+	transition: background .5s, opacity .5s;
+}
+.slider-nav-item-current {
+	opacity: 1;
+}
+/*主内容区***************************************************************/
+.gray-wrap {
+	background: #f9f9f9;
+}
+.white-wrap {
+	background: #fff;
+}
+.nsqa-panel {
+	border: none;
+	box-shadow: none;
+	margin-bottom: 0;
+	background: none;
+}
+.nsqa-panel .panel-heading {
+	background: none;
+	border-bottom: none;
+	padding: 30px 0 20px;
+}
+.nsqa-panel .panel-title {
+	font-size: 24px;
+	text-align: left;
+	font-weight: 400;
+}
+.nsqa-panel .panel-heading .fr {
+	color: #999;
+}
+.nsqa-panel .panel-heading .fr:hover {
+	color: #2baa82;
+}
+.nsqa-panel .panel-body {
+	padding: 0;
+}
+/*缩略图*********/
+.nsqa-panel .thumbnail {
+	padding: 0;
+	border-radius: 0;
+	border: none;
+	background: none;
+}
+.nsqa-panel .thumbnail > img, .nsqa-panel .thumbnail a > img {
+	width: 100%;
+	border-radius:2px;
+}
+.nsqa-panel .thumbnail h3 {
+	font-size: 15px;
+	margin: 0;
+	line-height: 28px;
+}
+.nsqa-panel .caption {
+	padding: 5px 0;
+}
+.nsqa-panel .caption p {
+	margin: 0;
+}
+.nsqa-panel .caption .item-title {
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 32px;
+}
+.nsqa-panel .caption .item-cont {
+	line-height: 20px;
+	color: #999;
+}
+.nsqa-panel .caption .item-info {
+	line-height: 20px;
+	color: #ccc;
+}
+/**********/
+.nsqa-panel .list-group {
+	margin-bottom: 10px;
+}
+.nsqa-panel .list-group .list-group-item {
+	background: none;
+	border: none;
+	border-bottom: 1px #e9e9e9 solid;
+	border-radius: 0;
+	padding: 8px 0 8px 15px;
+	background: url(../images/icon-sprites.png) no-repeat 0 18px;
+}
+.nsqa-panel .list-group .list-group-item .date {
+	float: right;
+	color: #ccc;
+}
+.nsqa-panel .total {
+	line-height: 40px;
+	font-size: 15px;
+	color: #666;
+}
+.nsqa-panel .total b {
+	font-size: 20px;
+	color: #2baa82;
+	font-weight: 400;
+}
+/*footer***************************************************************/
+.footer {
+	background: #333;
+	padding: 20px 0;
+	color: #ccc;
+}
+.footer .link {
+	color: #ccc;
+}
+.footer .link a {
+	color: #ccc;
+	margin: 0 5px;
+}
+.footer .link a:hover {
+	color: #fff;
+}
+/*服务列表***************************************************************/
+.nsqa-breadcrumb{
+	margin-top:20px;
+	border-radius:2px;
+	background:#f9f9f9;}
+.nsqa-breadcrumb > li + li:before{
+	content: normal;}
+.nsqa-page{
+	text-align:center;
+	margin-bottom:20px;
+	display:block;}
+.nsqa-page .pagination > .active > a, 
+.nsqa-page .pagination > .active > span, 
+.nsqa-page .pagination > .active > a:hover, 
+.nsqa-page .pagination > .active > span:hover, 
+.nsqa-page .pagination > .active > a:focus, 
+.nsqa-page .pagination > .active > span:focus{
+	background-color:#2baa82;
+	border-color:#2baa82;
+	border-radius:2px;
+	margin:0 3px;}
+.nsqa-page .pagination > li:first-child > a, 
+.nsqa-page .pagination > li:first-child > span{
+	margin:0 3px;
+	border-radius:2px;}
+.nsqa-page .pagination > li > a, 
+.nsqa-page .pagination > li > span{
+	margin:0 3px;
+	border-radius:2px;
+	}
+/*表单***************************************************************/
+.nsqa-panel .nav > li > a{
+	font-size:20px;
+	color:#999;}
+.nsqa-panel .nav-tabs > li.active > a, 
+.nsqa-panel .nav-tabs > li.active > a:hover, 
+.nsqa-panel .nav-tabs > li.active > a:focus{
+	color:#333;}
+.nsqa-tab-content{
+	margin-bottom:80px;}
+.nsqa-tab-content .btn-primary{
+	background-color: #2baa82;
+	border-color: #2baa82;}
+.nsqa-tab-content .btn-primary:hover, 
+.nsqa-tab-content .btn-primary:focus, 
+.nsqa-tab-content .btn-primary:active,
+.nsqa-tab-content .btn-primary.active, 
+.nsqa-tab-content .open .dropdown-toggle.btn-primary{
+	background-color: #2baa82;
+	border-color: #2baa82;}
+/*统计报表***************************************************************/
+.nsqa-report{
+	border:1px #e9e9e9 solid;
+	border-radius:2px;
+	min-height:100px;
+	margin-bottom:40px;
+	padding:20px;}

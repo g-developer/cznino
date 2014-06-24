@@ -1,0 +1,208 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>服务注册-NSQA测试服务化平台</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.glide.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="nsqa-navbar-wrapper navbar-wrapper nsqa-navbar-wrapper-mini">
+  <div class="container">
+    <nav class="navbar" role="navigation"> 
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header"> <a class="navbar-brand" href="#">NSQA</a> </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" style="margin-top:10px;">
+        <div class="account"><span>Hi，yangyukun!</span><a href="#">注销</a></div>
+        <ul class="nav nav-bar nav-pills navbar-right">
+          <li><a href="#">首页</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 公共服务 <span class="caret"></span> </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">全部</a></li>
+              <li><a href="#">用户测试</a></li>
+              <li><a href="#">数据测试</a></li>
+              <li><a href="#">国际化</a></li>
+              <li><a href="#">移动测试</a></li>
+              <li><a href="#">API测试</a></li>
+              <li><a href="#">其他</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 自有服务 <span class="caret"></span> </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">NLP</a></li>
+              <li><a href="#">WD</a></li>
+              <li><a href="#">IDL</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="#">服务注册</a></li>
+          <li><a href="#">使用统计</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </nav>
+  </div>
+</div>
+<div class="white-wrap">
+  <div class="container">
+    <ol class="nsqa-breadcrumb breadcrumb">
+      当前位置：
+      <li><a href="#">首页</a></li>
+      >
+      <li class="active">服务注册</li>
+    </ol>
+  </div>
+</div>
+<div class="white-wrap">
+  <div class="container">
+    <div class="nsqa-panel panel panel-default">
+      <div class="panel-heading">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#apply-form" data-toggle="tab">服务申请</a></li>
+          <li><a href="#apply-list" data-toggle="tab">申请列表</a></li>
+        </ul>
+      </div>
+      <div class="panel-body">
+        <div class="nsqa-tab-content tab-content">
+          <div class="tab-pane active" id="apply-form">
+            <div class="row">
+              <div class="col-sm-12 col-md-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">申请人</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入申请人姓名">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">所在团队</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">产品线</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入申请人姓名">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">服务类型</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">服务名称</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入申请人姓名">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-5">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">服务类型</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-10">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">服务url</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-10">
+                <div class="form-group">
+                    <label for="exampleInputFile">服务logo</label>
+                    <input type="file" id="exampleInputFile" >
+                    <p class="help-block">上传450x300px尺寸的图片</p>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-10">
+                <button type="button" class="btn btn-primary btn-lg">提交申请</button>
+<button type="button" class="btn btn-default btn-lg">清空信息</button>
+              </div>
+            </div>
+            
+          </div>
+          <div class="tab-pane" id="apply-list">
+          <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>申请人</th>
+            <th>所在团队</th>
+            <th>所在产品线</th>
+            <th>服务类型</th>
+            <th>服务url</th>
+            <th>状态</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>李云龙</td>
+            <td>NSQA</td>
+            <td>NS</td>
+            <td>工具</td>
+            <td><a href="#">http://huibenjiaju.diandian.com/</a></td>
+            <td>待审核</td>
+          </tr>
+          <tr>
+            <td>李云龙</td>
+            <td>NSQA</td>
+            <td>NS</td>
+            <td>工具</td>
+            <td><a href="#">http://huibenjiaju.diandian.com/</a></td>
+            <td>待审核</td>
+          </tr>
+          <tr>
+            <td>李云龙</td>
+            <td>NSQA</td>
+            <td>NS</td>
+            <td>工具</td>
+            <td><a href="#">http://huibenjiaju.diandian.com/</a></td>
+            <td>待审核</td>
+          </tr>
+          <tr>
+            <td>李云龙</td>
+            <td>NSQA</td>
+            <td>NS</td>
+            <td>工具</td>
+            <td><a href="#">http://huibenjiaju.diandian.com/</a></td>
+            <td>待审核</td>
+          </tr>
+          <tr>
+            <td>李云龙</td>
+            <td>NSQA</td>
+            <td>NS</td>
+            <td>工具</td>
+            <td><a href="#">http://huibenjiaju.diandian.com/</a></td>
+            <td>待审核</td>
+          </tr>
+          <tr>
+            <td>李云龙</td>
+            <td>NSQA</td>
+            <td>NS</td>
+            <td>工具</td>
+            <td><a href="#">http://huibenjiaju.diandian.com/</a></td>
+            <td>待审核</td>
+          </tr>
+          
+        </tbody>
+      </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="copyright fr">© 2013 NSQA 版权所有</div>
+    <div class="link"><a href="#">帮助中心</a> | <a href="#">服务注册</a> | <a href="#">使用统计</a></div>
+  </div>
+</div>
+</body>
+</html>
